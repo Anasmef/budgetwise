@@ -1,0 +1,43 @@
+
+# ==================================
+# BUDGETWISE - GITIGNORE
+# ==================================
+
+# Node.js / React
+node_modules/
+dist/
+coverage/
+
+# Java / Maven
+target/
+*.class
+
+# Variables d'environnement et secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Fichiers temporaires
+*.tmp
+*.bak
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Fichiers locaux sensibles
+application-local.properties
+application-local.yml
+application-local.yaml

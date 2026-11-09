@@ -1,0 +1,79 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+        Parent Spring Boot :
+        gère les versions compatibles des dépendances
+        et la configuration des plugins Maven.
+    -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.1.2</version>
+        <relativePath/>
+    </parent>
+
+    <!-- Identification de notre application BudgetWise -->
+    <groupId>com.budgetwise</groupId>
+    <artifactId>budgetwise-backend</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>BudgetWise Backend</name>
+    <description>
+        API REST de gestion de budget personnel
+    </description>
+
+    <!-- Version Java utilisée pour compiler le projet -->
+    <properties>
+        <java.version>21</java.version>
+    </properties>
+
+    <dependencies>
+
+        <!--
+            Spring Web MVC :
+            permet de créer des API REST avec :
+            @RestController, @GetMapping, @PostMapping...
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webmvc</artifactId>
+        </dependency>
+
+        <!--
+            Tests automatisés :
+            fournit les outils nécessaires pour tester
+            notre application Spring Boot.
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!--
+                Plugin Spring Boot :
+                permet de démarrer et de construire
+                notre application avec Maven.
+            -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

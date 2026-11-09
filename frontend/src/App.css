@@ -1,0 +1,47 @@
+
+/* Conteneur principal de BudgetWise */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+/* En-tête de l'application */
+header {
+  margin-bottom: 32px;
+}
+
+/* Titre principal */
+h1 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+/* Tableau des transactions */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+/* Cellules du tableau */
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* En-têtes des colonnes */
+th {
+  background: #f1f5f9;
+}
+
+/* Message d'erreur */
+.error {
+  color: #b91c1c;
+  padding: 12px;
+  background: #fef2f2;
+  border-radius: 6px;
+}

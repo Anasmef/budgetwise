@@ -1,0 +1,33 @@
+
+/* Styles globaux de BudgetWise */
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+    margin: 16px auto;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 8px 5px;
+  }
+}
